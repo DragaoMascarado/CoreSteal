@@ -27,14 +27,6 @@ At a high level, the project consists of two components:
 - **CoreSteal launcher** — locates a supported Chromium browser, starts a browser process, loads the extractor component into that process, and receives extracted records through local IPC.
 - **Extractor** — runs inside the browser process, identifies the browser environment, obtains the browser's encrypted master key, accesses Chromium profile databases, decrypts supported records, and sends structured results back to the launcher.
 
-According to the current source code, the launcher supports:
-
-- Google Chrome
-- Microsoft Edge
-- Brave Browser
-
-The extractor also contains browser-specific COM/elevator definitions used when working with App-Bound Encryption.
-
 ---
 
 ## What the project demonstrates
